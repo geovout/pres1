@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Διπλωματική Βούτος</title>
+
+		<meta name="description" content="ΑΝΑΠΤΥΞΗ ΠΕΡΙΒΑΛΛΟΝΤΙΚΟΥ ΚΟΙΝΩΝΙΚΟΥ ΔΙΚΤΥΟΥ ΑΙΣΘΗΤΗΡΩΝ ΚΑΙ Η ΑΠΟΤΥΠΩΣΗ ΤΟΥ ΣΕ ΠΕΡΙΒΑΛΛΟΝ WEBGIS">
+		<meta name="author" content="ΒΟΥΤΟΣ ΓΕΩΡΓΙΟΣ">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/league.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<[endif]-->
+	</head>
+
+	<body>
+	<!-- Wrap the entire slide show in a div using the "reveal" class. -->
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+			<!--slide1-->
+				<section>
+			<img width="60" height="62" data-src="https://upload.wikimedia.org/wikipedia/commons/f/fd/Hua_logo.jpg" alt="Hua logo">
+				<p style="font-size:70%;">ΧΑΡΟΚΟΠΕΙΟ ΠΑΝΕΠΙΣΤΗΜΙΟ<br> ΤΜΗΜΑ ΓΕΩΓΡΑΦΙΑΣ<br><strong>ΠΜΣ ΕΦΑΡΜΟΣΜΕΝΗ ΓΕΩΓΡΑΦΙΑ ΚΑΙ ΔΙΑΧΕΙΡΙΣΗ ΤΟΥ ΧΩΡΟΥ<br>ΚΑΤΕΥΘΥΝΣΗ ΓΕΩΠΛΗΡΟΦΟΡΙΚΗ</strong></p>
+					<p style="font-size:50%;">Διπλωματική εργασία:</p>
+					<h3>ΑΝΑΠΤΥΞΗ ΠΕΡΙΒΑΛΛΟΝΤΙΚΟΥ ΚΟΙΝΩΝΙΚΟΥ ΔΙΚΤΥΟΥ ΑΙΣΘΗΤΗΡΩΝ ΚΑΙ Η ΑΠΟΤΥΠΩΣΗ ΤΟΥ ΣΕ ΠΕΡΙΒΑΛΛΟΝ <strong>WEBGIS</strong></h3>
+					
+					<p>
+						<small>Φοιτητής: Βούτος Γεώργιος, ΑΜ: 214302 <br> Επιβλέπων Καθηγητής: Χρήστος Χαλκιάς</small>
+					</p>
+				</section>
+<!--slide2-->
+				<section>
+					<h3>Internet of Things (IoT) kai GIS</h3>
+					<p style='font-size:70%;'>
+Το διαδίκτυο των πραγμάτων (IoT) αποτελεί η αξιοποίηση καθημερινών αντικειμένων (κυρίως ψηφιακών συσκευών) με σκοπό τον εμπλουτισμό της γνώσης του διαδικτύου. Η εξέλιξη της σύγχρονης τεχνολογίας GPS (Global Positioning System) καθώς και της ανάπτυξης νέων δυνατοτήτων ανάλυσης και παρουσίασης της χωρικής πληροφορίας συντελούν στη διεύρυνση των εφαρμογών στην επιστήμη των Γεωγραφικών Συστηματων Πληροφοριών. Επιπροσθέτως η μαζικοποίηση του mobile internet μέσω φορητών συσκευών (smartphones, tablets, smartwatches) παρέχει τη δυνατότητα τροφοδότησης του διαδικτύου από τον απλό χρήστη ως ενεργό μέλος μίας "ψηφιακής κοινότητας".					</p>
+				</section>
+<!--slide3-->
+				<!-- Example of nested vertical slides -->
+				<section>
+					<section>
+						<h3>Δομη του Εργου</h3>
+						<p style='font-size:90%;'>Η παρούσα μελέτη αφορά στην <br><em>πειραματική κατασκευή ενός συστήματος καταγραφής και παρατήρησης του περιβάλλοντος <br></em>μέσω της συνδυαστικής εφαρμογής αξιοποίησης του IoT και των Web GIS. Το πρότυπο αυτό μοντέλο βασίζεται στην πλατφόρμα ανοιχτού υλισμικού Arduino και την αξιοποίηση γλωσσών προγραμματισμού (C++, Javascript).</p>
+						<p style='font-size:40%;'>Πατήστε <em>Κάτω</em> για αναλυτική περιγραφή κάθε τομέα του σχεδίου.</p>
+						<p style='font-size:40%;'>Πατήστε <em>Δεξιά</em> για συνέχεια της παρουσίασης.</p>
+						<br>
+						<!--<a href="#" class="navigate-down">-->
+						<!--<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">-->
+						</a>
+					</section>
+					<!--slide3a-->
+					<section>
+					<img width="90" height="61"; data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Arduino_Logo.svg/1280px-Arduino_Logo.svg.png" alt="Arduino logo">
+						<h3>Arduino Yun</h3>
+						<p style='font-size:80%;'>Το <strong><em>Arduino</strong></em> αποτελεί μία πλατφόρμα ανοιχτού υλισμικού (open source hardware) που παρέχει τη δυνατότητα ανάπτυξης εφαρμογών αυτοματισμού βασιζόμενο hardware και software εύκολο σε χρήση.  Διαθέτει πληθώρα επεκτάσεων (αισθητήρες) και δυνατότητες παραμετροποίησης (Processing με C++).  Στην προκείμενη μελέτη χρησιμοποιείται το <strong><em>Arduino Yun</em></strong>, το οποίο διαθέτει πληθώρα δυνατοτήτων ιδανικές για την πειραματική συσκευή που κατασκευάζεται.</p>
+					<img width="150" height="112"; data-src="https://upload.wikimedia.org/wikipedia/commons/1/1d/ArduinoYun.jpg" alt="Yun">
+					</section>
+					<!--slide3b-->
+					<section>
+					<img width="128" height="150"; data-src="https://upload.wikimedia.org/wikipedia/commons/d/db/Android_robot_2014.svg" alt="Android logo">
+						<h3>Android Application</h3>
+						<p style='font-size:70%';>Το Android είναι ένα λειτουργικό σύστημα για φορητές συσκευές (Mobile Operating System) με οθόνη αφής (smartphones & tablets). Ο πηγαίος κώδικάς του διατίθεται από τη Google με άδεια χρήσης ανοιχτού κώδικα, γεγονός που καθιστά το Android ένα προσβάσιμο και  πλήρως διαχειρίσιμο λειτουργικό για συσκευές τελευταίας τεχνολογίας.
+Η συγκεκριμένη μελέτη βασίζεται κατά μεγάλο βαθμό στην κατασκευή μίας ειδικευμένης εφαρμογής  Android, καθώς παρέχει δυνατότητες ελέγχου της συσκευής παρατήρησης του περιβάλλοντος (Arduino). Περαιτέρω, διατίθενται λειτουργίες λήψης χωρικής θέσης, με τη χρήση του δέκτη GPS, και συνδεσιμότητας με τη τροφοδότηση του web server στο επόμενο στάδιο της μελέτης.
+</p>
+						<br>
+					</section>
+					<!--slide3c-->
+					<section>
+						<h3>Web GIS</h3>
+						<p style='font-size:70%'; "align:justify">Web GIS (ή Web Mapping) είναι η παρουσίαση και αξιοποίηση της χαρτογραφικής πληροφορίας στο διαδίκτυο. Οι παραγόμενοι διαδικτυακοί χάρτες έχουν σκοπό τη διάδραση μεταξύ χρήστη και παρεχόμενης πληροφορίας αποσκοπώντας σε ένα δυναμικό περιβάλλον Γεωγραφικών Πληροφοριακών Συστημάτων.
+Η παρούσα μελέτη στοχεύει στη δημιουργία προσαρμοσμένης εφαρμογής web mapping, καθώς τα δεδομένα που συλλέγονται από τη συσκευή καταγραφής εμπεριέχουν χωρική πληροφορία. Η πλατφόρμα που θα κατασκευαστεί πρόκειται να εξυπηρετήσει τη φύση και το είδος των δεδομένων που παράγονται από τη συσκευή μέσω της πολυχρηστικότητας, βέλτιστης διανομής και υπέρθεσής τους.
+</p>
+					<img width="400" height="200"; data-src="http://1.bp.blogspot.com/-fDWnKmxvkXk/VaEMXuisPbI/AAAAAAAAA_U/alLok6YrkiY/s1600/OpenStreetMAP_OpenWebGIS_3en.png" alt="webGIS">
+				<p align="center"; style="font-size:40%;">Πηγή εικόνας: http://1.bp.blogspot.com/-fDWnKmxvkXk/VaEMXuisPbI/AAAAAAAAA_U/alLok6YrkiY/s1600/OpenStreetMAP_OpenWebGIS_3en.png</p>
+				</section>
+			</section>
+				<!--slide4-->
+			<section>
+					<section>
+					<h2>Arduino</h2>
+					<p style='font-size:70%';"align:justify";>Η πειραματική συσκευή καταγραφής διαθέτει 5 αισθητήρες παρατήρησης του περιβάλλοντος, οι οποίοι παράγουν 7 μεταβλητές. Βασίζεται στο μικροελεγκτή Arduino Yun ο οποίος τροφοδοτείται μέσω εξωτερικής μπαταρίας (power bank) για εφαρμογή στο πεδίο.
+Οι μετρήσεις αποστέλλονται μέσω πρωτοκόλλου Bluetooth σε συσκευή Android, όπου είτε διανέμονται σε εξυπηρετητή, είτε αποθηκεύονται τοπικά σε αυτή.</p>
+					</p>
+					<img width="800" height="300"; data-src="https://app.box.com/representation/file_version_56057923037/image_2048_jpg/1.jpg?shared_name=xq02136tzfwes6zl1bf5qhao086d5zqy" alt="MyArduino">
+					</section>
+				<!--slide4a-->
+					<section>
+					<h3>Αισθητηρες</h3>
+											<br>
+					<table style='font-size:70%';>
+						<thead style='font-size:70%';>
+							<tr>
+								<th>Τύπος Αισθητήρα</th>
+								<th>Μοντέλο</th>
+								<th>Μεταβλητές</th>
+								<th>Μονάδα μέτρησης</th>
+							</tr>
+						</thead>
+						<tbody style='font-size:70%';>
+							<tr>
+								<td>Θερμοκρασία και Υγρασία</td>
+								<td>DHT 22</td>
+								<td>Θερμοκρασία, Σχετική Υγρασία, Δείκτης Θερμότητας</td>
+								<td><sup>o</sup>C, %Υγρασία, %<sup>o</sup>C</td>
+							</tr>
+							<tr>
+								<td>Φωτόμετρο</td>
+								<td>TEMT 2000</td>
+								<td>Ηλιακή φωτεινότητα</td>
+								<td>Lux (lx)</td>
+							</tr>
+							<tr>
+								<td>Μικρόφωνο</td>
+								<td>MAX 4466</td>
+								<td>Ηχορύπανση/ Ενταση θορύβου</td>
+								<td>dB/ Τιμές έντασης</td>
+							</tr>
+							<tr>
+								<td>Αέρια μικροσωματίδια</td>
+								<td>MQ-7</td>
+								<td>Συγκέντρωση Μονοξειδίου του άνθρακα (CO)</td>
+								<td>ppm</td>
+							</tr>
+							<tr>
+								<td>Αέρια μικροσωματίδια</td>
+								<td>MQ-4</td>
+								<td>Συγκέντρωση Μεθανίου (CH4)</td>
+								<td>ppm</td>
+							</tr>
+						</tbody>
+					</table>
+											<br>
+<p style='font-size:50%';>Επίσης, αξιοποιείται η επέκταση <em>HC-06</em> για την αποστολή των μετρήσεων μέσω σύνδεσης bluetooth.<br> Το συγκεκριμένο χρησιμοποιεί σειριακή επικοινωνία και τα δεδομένα εμφανίζονται σε τερματικό στην τελική συσκευή (συσκευή Android ή PC).</p>
+					</section>
+					
+				<!--slide4b-->
+				<section>
+					<h3>Πηγαιος κωδικας</h3>
+					<p style='font-size:70%';"align:justify";>Η παραμετροποίηση της συσκευής Arduino γίνεται μέσω ειδικού περιβάλλοντος ανάπτυξης λογισμικού (IDE) σε γραφικό περιβάλλον. Τα προγράμματα που περιέχουν τον κώδικα ονομάζονται sketches και χρησιμοποιούν εντολές γλώσσας  C. Η συγκεκριμένη εφαρμογή αποσκοπεί στη σύνταξη ενός ενιαίου κώδικα ο οποίος περιλαμβάνει την παραμετροποίηση της συσκευής, τη βαθμονόμηση όλων των αισθητήρων και την αποστολή των μετρήσεων μέσω Bluetooth.</p>
+					<img width="490" height="380"; data-src="https://app.box.com/representation/file_version_56010461117/image_2048_jpg/1.jpg?shared_name=eauutv0ehex66f2ktnsoku34pqzs77zb" alt="ArdSketch">
+				</section>
+				<!--slide4c
+				<section>
+					<h3>Τερματικο - Μεταφορα δεδομενων</h3>
+					<p  style='font-size:70%';"align:justify";>
+					</p>
+				</section>-->
+				</section>
+				<section>
+				<section data-background-transition="beige">
+				<!--slide5-->
+				<h3>Android App - <em>SENSo</em></h3>
+				<p style="font-size:70%";"align:justify";>Η πλατφόρμα Android χαρακτηρίζεται από μεγάλη ευελιξία και διαθέτει πολλές δυνατότητες ανάπτυξης εφαρμογών για συμβατές συσκευές smartphone ή tablet. Μέσω του Android Studio, ή άλλων εφαρμογών (όπως MIT app inventor), ο χρήστης - προγραμματιστής είναι σε θέση να διαμορφώσει τη λειτουργικότητα και το γραφικό περιβάλλον της Android εφαρμογής.<br>
+Στη συγκεκριμένη μελέτη αξιοποιείται πλήρως η ευελιξία της Android πλατφόρμας και ειδικότερα αναπτύσσονται διαδικασίες ασύρματης σύνδεσης (bluetooth), καταγραφής (GPS logger), ανάγνωσης (serial terminal) και διαχείρισης των μετρήσεων (διαμοιρασμός και αποθήκευση). 
+				</p>
+				<img width="364" height="280"; data-src="https://app.box.com/representation/file_version_56065752189/image_2048_jpg/1.jpg?shared_name=0pjy4if617bt6wa2iic1lemcvefl4egw" alt="AndrStud">
+				</section>
+				<!--slide5a-->
+				<section>
+				<h3>Bluetooth Connection</h3>
+				<p style="font-size:70%";"align:justify";>Η βασική αρχή που ισχύει κατά τη σύνδεση bluetooth μεταξύ Arduino και Android, σχετίζεται με το γεγονός ότι το πρώτο αποστέλλει δεδομένα στο δεύτερο και όχι αντίστροφα. Κατά συνέπεια το Application πραγματοποεί αρχικά τη σύνδεση (pairing) και στη συνέχεια να "διαβάζει" τις μετρήσεις από τους αισθητήρες. Αυτό είναι σχετικά απλό - σε θεωρητικό επίπεδο - λόγω του μικρού όγκου δεδομένων και της συνεχής ασύρματης σειριακής επικοινωνίας. Ο βασικός περιορισμός βρίσκεται στη διατήρηση εγγύτερης απόστασης μεταξύ των δύο - μικρότερη από 10 μέτρα. 
+				</p>
+				</section>
+				<!--slide5b-->
+				<section>
+				<h3>GPS logger</h3>
+				<p style="font-size:70%";"align:justify";>Μία πολύ σημαντική λειτουργικότητα των φορητών συσκευών είναι αυτή της εύρεσης της γεωγραφικής θέσης (Geolocation) μέσω εγκατεστημένου GPS logger ή μέσω ασύρματου δικτύου. Τη μελέτη αφορά ο συνεχής εντοπισμός της κίνησης (tracking) ούτως ώστε να εντοπίζονται πιο αποτελεσματικά οι ρυπογόνοι παράγοντες καθ'όλη τη διάρκεια λειτουργίας της συσκευής και να παρουσιάζονται χαρτογραφικά με διανυσματική μορφή. Αποσκοπώντας στη βέλτιστη χωρική καταγραφή μελετάται η συνοδευτική λειτουργία με υφιστάμενες εφαρμογές, όπως το GPS Status & Toolbox.
+				</p>
+				</section>
+				<!--slide5c-->
+				<section>
+				<h4>Τερματικο</h4>
+				<p style="font-size:70%";"align:justify";>Η ύπαρξη τερματικού είναι απαραίτητη για τον έλεγχο της καλής λειτουργίας και συνδεσιμότητας του project. Επιπροσθέτως,  παρέχει τη δυνατότητα προβολής και ανάγνωσης των καταγραφών on the fly.
+				</p><br>
+				<h4>Αποθηκευση - διαμοιρασμος</h4>
+				<p style="font-size:70%";"align:justify";>Παράλληλα με τη καταγραφή των μεταβλητών, εξίσου σημαντική είναι η αποθήκευσή τους. Αυτό προβλέπεται να πραγματοποιηθεί τοπικά στη μνήμη SD της συσκευής Android και να διαμοιράζεται στον εξυπηρετητή μέσω ασύρματου δικτύου (WiFi και 3G).
+				</p>
+				</section>
+				<section>
+				<img width="800" height="615"; data-src="https://app.box.com/representation/file_version_56083216093/image_2048_jpg/1.jpg?shared_name=pbhdku35tgqrgi4s5h7l06pm265xrrpu" alt="ARdTErm">
+				</section>
+				</section>
+				<section>
+				<!--slide6a-->
+				<h3>web GIS</h3>
+				<p style="font-size:70%";"align:justify";>Όπως προαναφέρθηκε, τα αποτελέσματα των μετρήσεων από τη συσκευή καταγραφής θα παρουσιάζονται στο χρήστη με χωρική μορφή. Αυτό το σκοπό εξυπηρετεί το διαδικτυακό περιβάλλον χαρτογράφησης στο οποίο θα αποτυπώνονται δυναμικά στο χώρο οι διακυμάνσεις των μετρούμενων ρυπαντικών παραγόντων.<br> Αρχικά θα αξιοποιηθεί υφιστάμενη υπηρεσία χαρτών (Web Map Service) για την προβολή του χαρτογραφικού υποβάθρου. Η υπηρεσία που θα επιλεγεί είναι η ανοιχτού περιεχομένου Open Street Map (OSM), η οποία διατίθεται σε διάφορους τύπους υποβάθρου (street, satelite, contour κα). Σε αυτό θα παρουσιάζονται σε διανυσματική γραμμική μορφή (linear vector layers) οι μετρήσεις των μεταβλητών.<br> Με την εισαγωγή στο σύστημα, ο χρήστης θα είναι σε θέση να ελέγξει τις τελευταίες καταγραφές. Η  κάθε μεταβλητή επιλέγεται ξεχωριστά από ειδικό μενού και προβλέπεται η επισήμανση των διακυμάνσεων μεταξύ των τιμών βάσει χρωματικής παλέτας.</p>
+				</section>
+				
+				<!--slide7-->
+				<section>
+				<section id="fragments">
+						<h3>Στοχοι - Αναμενομενα αποτελεσματα</h3>
+						<ul type="circle">
+						<li class="fragment">Κατασκευή λειτουργικής πλατφόρμας παρατήρησης του περιβάλλοντος</li>
+						<li class="fragment">Η εφαρμογή του να είναι απλή και υλοποιήσιμη </li>
+						<li class="fragment">Παραγωγή  μετρήσιμων μεταβλητών για περαιτέρω ανάλυση</li>
+						<li class="fragment">Ταυτόχρονη τροφοδότηση server από  πολλές συσκευές</li>
+						<li class="fragment">Δυναμικό διαδικτυακό περιβάλλον ΓΠΣ</li>
+						<li class="fragment">Ευκολία στη χρήση και εξαγωγή χρήσιμων συμπερασμάτων</li>							</ul>
+					</section>	
+				</section>
+				<!--slide8-->
+				<section>
+					<h2>Ευχαριστω!!!</h2><br><br>
+					<p>Γιώργος Βούτος<br><a style='font-size:70%;' href="mailto:george.voutos@gmail.com">george.voutos@gmail.com</a></p>
+					<br><p style='font-size:50%;'>Η παρούσα μελέτη υλοποιείται με την υποστήριξη του <br><em><strong>Ινστιτούτου Πληροφορικής και Τηλεπικοινωνιών, ΕΚΕΦΕ Δημόκριτος</em></strong></p>
+
+				</section>
+
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'convex', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
